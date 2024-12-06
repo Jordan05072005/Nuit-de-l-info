@@ -1,0 +1,260 @@
+/* Style général pour la page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: black;
+}
+
+* {
+  list-style: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-top: 100px;
+  width: 80vw;
+  right: 10vw;
+}
+
+/* Style du bouton pour ouvrir le menu */
+.open-btn {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+/* login */
+
+.login-div {
+  background-color: wheat;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #3a3a3a;
+  text-align: center;
+}
+
+.login-div h1 {
+  margin: 10px;
+}
+
+.login-div div {
+  margin: 10px;
+}
+
+.login-logo {
+  width: 100px;
+}
+
+.login-div div input {
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  transition: 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.login-div div input:hover {
+  border: 1px solid #3a3a3a;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+#submit {
+  font-size: 15px;
+  transition: 0.5s;
+  border: 1px solid #3a3a3a;
+  border-radius: 3px;
+}
+
+#submit:hover {
+  font-size: 20px;
+  transition: 0.5s;
+  background-color: red;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+}
+
+.log-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  margin-top: 100px;
+  width: 80vw;
+}
+
+.logchat-box {
+  flex: 2;
+  height: 400px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 80vw;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logchat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.logchat-box::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.logchat-box::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.log {
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.log.Success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.log.Error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.log.Warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* credit */
+.container-center {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.credit-div {
+  background-color: wheat;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+
+  border-radius: 10px;
+  border: 2px solid #3a3a3a;
+  text-align: center;
+  width: 60vw;
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.credit-div .pdp {
+  width: 100px; /* Largeur de l'image */
+  height: 100px; /* Hauteur de l'image */
+  border-radius: 50%; /* Pour rendre l'image ronde */
+}
+
+.contributeur-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Espace uniforme entre les éléments */
+  width: 100%;
+}
+.nom-contrib {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.like-github {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  outline: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip span {
+  visibility: hidden;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+.credit-div a {
+  color: black;
+}
+
+.black-font {
+  color: black;
+}
+
+.profile-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.profile-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.profile-info {
+  margin-top: 20px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.profile-info strong {
+  color: #555;
+}

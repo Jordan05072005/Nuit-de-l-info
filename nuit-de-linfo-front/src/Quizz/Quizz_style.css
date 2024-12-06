@@ -1,0 +1,92 @@
+body {
+  background: #113264;
+  box-sizing: border-box;
+}
+
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.app button {
+  background: #fff;
+  font-size: 20px;
+  justify-content: space-between;
+  color: #000;
+  font-weight: 700;
+  width: 75px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.app button:hover {
+  background: #cecece;
+  border-radius: 15px;
+}
+
+.app img {
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+.div_quizz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.rep_quizz {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.popup {
+  animation: fade-in-out 5s ease-in-out 10s;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
