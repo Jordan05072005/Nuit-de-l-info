@@ -11,6 +11,6 @@ Man and the Ocean (their similarities)
 
 We used Nest and Mongo DB technologies for the backend as well as React for the Frontend.
 
-## Notice :
+## My opinion :
 
 It was my very first web project. And I loved understanding, trying and exploring these new languages ​​and this new field. I really enjoyed discovering the Web in more detail and learning a lot at the same time.
